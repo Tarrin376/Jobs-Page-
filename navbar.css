@@ -1,0 +1,186 @@
+nav {
+    display: flex;
+    max-width: 1400px;
+    width: 80%;
+    margin: auto;
+    align-items: center;
+    gap: 30px;
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgba(182, 188, 200, 0.5);
+}
+
+nav > div {
+    height: 100%;
+}
+
+.mobileNav {
+    border-bottom: none;
+}
+
+.mobileNavShow {
+    left: 0px !important;
+}
+
+.mobileNavButton {
+    background-color: transparent;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.mobileNavButton div {
+    background-color: black;
+    width: 100%;
+    height: 5px;
+}
+
+.mobileNavbar {
+    width: 280px;
+    height: 100%;
+    background-color: white;
+    position: fixed;
+    z-index: 1;
+    padding: 30px;
+    left: -280px;
+    transition: 0.3s ease-in-out all;
+}
+
+.mobileNavbar img {
+    width: 20px;
+    cursor: pointer;
+    margin-bottom: 70px;
+}
+
+.mobileNavbar div {
+    margin-bottom: 30px;
+}
+
+.mobileNavbar a {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    font-weight: 700;
+}
+
+.options {
+    display: flex;
+    gap: 40px;
+    height: 100%;
+    position: absolute;
+    align-items: center;
+    margin-left: 210px;
+    margin-right: 100px;
+}
+
+.options a {
+    text-decoration: none;
+    color: gray;
+}
+
+.options div {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    transition: 0.05s linear all;
+}
+
+.options div:hover {
+    border-bottom: 4px solid hsl(26, 100%, 55%);
+    cursor: pointer;
+}
+
+.details {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+#profilePic {
+    width: 60px;
+    border-radius: 50%;
+}
+
+#profilePic:hover {
+    border: 2px solid hsl(26, 100%, 55%);
+    cursor: pointer;
+}
+
+.mobileProfile {
+    width: 20px;
+}
+
+.cartIcon {
+    width: 28px;
+    height: 28px;
+    background: url('./images/icon-cart.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    cursor: pointer;
+    position: relative;
+    top: 2px;
+}
+
+.cartCapacity {
+    background-color: hsl(26, 100%, 55%);
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    font-size: 13px;
+    border-radius: 25px;
+    width: 27px;
+    position: absolute;
+    top: -6px;
+    left: 10px;
+    user-select: none;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.dimBackground {
+    position: fixed;
+    left: 100vw;
+    width: calc(100vw - 280px);
+    height: 100%;
+    z-index: 1;
+    background-color: transparent;
+    transition: 0.3s ease all;
+}
+
+.dimBackgroundShow {
+    background-color: rgba(0, 0, 0, 0.7) !important;
+    left: 280px !important;
+}
+
+@media screen and (max-width: 1100px) {
+    #profilePic {
+        width: 40px;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    nav {
+        width: 100%;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    nav {
+        padding-left: 15px;
+        padding-right: 15px;
+        gap: 20px;
+    }
+    .details {
+        gap: 10px;
+    }
+}
