@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce page</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./navbar.css">
+</head>
+<body>
+    <div class="popUpBackground"></div>
+    <div class="mobileNavbar">
+        <img class="closeNav" src="./images/icon-close.svg" alt="Close navbar">
+        <div>
+            <a href="#">Collections</a>
+        </div>
+        <div>
+            <a href="#">Men</a>
+        </div>
+        <div>
+            <a href="#">Women</a>
+        </div>
+        <div>
+            <a href="#">About</a>
+        </div>
+        <div>
+            <a href="#">Contact</a>
+        </div>
+    </div>
+    <div class="dimBackground">
+    </div>
+    <nav>
+        <div class="cart">
+            <p id="cartTitle">Cart</p>
+            <div class="line"></div>
+            <div class="cartContent">
+            </div>
+        </div>
+        <div class="logo">
+            <img src="./images/logo.svg" alt="Company logo">
+        </div>
+        <div class="options">
+            <div>
+                <a href="#">Collections</a>
+            </div>
+            <div>
+                <a href="#">Men</a>
+            </div>
+            <div>
+                <a href="#">Women</a>
+            </div>
+            <div>
+                <a href="#">About</a>
+            </div>
+            <div>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+        <div class="details">
+            <div class="cartIcon">
+                <div class="cartCapacity">
+                    <p>0</p>
+                </div>
+            </div>
+            <img src="./images/image-avatar.png" id="profilePic" alt="Profile picture">
+        </div>
+    </nav>
+    <main>
+        <div class="product">
+            <div class="productImages">
+                <div class="previewImage"></div>
+                <div class="carousel">
+                    <div id="image1"></div>
+                    <div id="image2"></div>
+                    <div id="image3"></div>
+                    <div id="image4"></div>
+                </div>
+            </div>
+            <div class="productDescription">
+                <h3>sneaker company</h3>
+                <h1>Fall Limited Edition Sneakers</h1>
+                <p id="desc">These low-profile sneakers are your perfect casual wear companion.
+                    Featuring a durable rubber outer sole, they'll withstand everything
+                    the weather can offer.
+                </p>
+                <div class="costInfo">
+                    <span id="cost">$125.00</span>
+                    <div id="discount">50%</div>
+                    <p id="RRP">$250.00</p>
+                </div>
+                <div class="productAmount">
+                    <span id="decrease">-</span>
+                    <span id="productCount">0</span>
+                    <span id="increase">+</span>
+                </div>
+                <button id="addItem">
+                    <img src="./images/icon-cart.svg" id="cartButton" alt="Cart icon">
+                    Add to cart
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <script src="./index.js"></script>
+    <script src="./navbar.js"></script>
+    <script src="./containers.js"></script>
+</body>
+</html>
